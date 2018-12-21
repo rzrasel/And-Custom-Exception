@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/sysDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+        <FrameLayout
+            android:id="@+id/sysFrameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- The navigation drawer -->
+        <ListView
+            android:id="@+id/sysDrawerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|left"
+            android:background="#ffffff"
+            android:choiceMode="singleChoice"
+            android:divider="#e5e5e5"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+        <!--android:listSelector="@drawable/xml_list_drawer"-->
+        <!--@android:color/transparent-->
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
